@@ -31,6 +31,17 @@ export class StatusClient extends EventEmitter {
   private isFinished: boolean = false;
   private lastDelay: number;
 
+  // Event listener methods
+  public on(event: 'connected', listener: () => void): this;
+  public on(event: 'disconnected', listener: () => void): this;
+  public on(event: 'statusUpdate', listener: (status: Status) => void): this;
+  public on(event: 'finished', listener: (status: Status) => void): this;
+  public on(event: 'error', listener: (error: Error) => void): this;
+  public on(event: 'timeout', listener: () => void): this;
+  public on(event: string, listener: (...args: any[]) => void): this {
+    return super.on(event, listener);
+  }
+
   constructor(options: StatusClientOptions) {
     super();
 
