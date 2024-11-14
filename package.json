@@ -1,0 +1,38 @@
+{
+  "name": "heygen-status-client",
+  "version": "1.0.0",
+  "description": "TypeScript status client library for demo HeyGen video translation service.",
+  "main": "dist/StatusClient.js",
+  "types": "dist/StatusClient.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apratimshukla6/heygen-status-client.git"
+  },
+  "keywords": ["heygen", "status", "client"],
+  "author": "Apratim Shukla",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "events": "^3.3.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/events": "^3.0.3",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.9.0",
+    "@types/ws": "^8.5.13",
+    "axios-mock-adapter": "^2.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
