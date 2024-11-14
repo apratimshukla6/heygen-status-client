@@ -1,0 +1,30 @@
+name: Node.js Package Test
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  install-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Set up Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.20.2'
+          registry-url: 'https://registry.npmjs.org/'
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Test the project
+      - name: Run unit and integration tests
+        run: npm test
