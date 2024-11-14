@@ -1,6 +1,6 @@
 {
   "name": "heygen-status-client",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "TypeScript status client library for demo HeyGen video translation service.",
   "main": "dist/StatusClient.js",
   "types": "dist/StatusClient.d.ts",
@@ -13,6 +13,9 @@
     "type": "git",
     "url": "https://github.com/apratimshukla6/heygen-status-client.git"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "keywords": ["heygen", "status", "client"],
   "author": "Apratim Shukla",
   "license": "Apache-2.0",
