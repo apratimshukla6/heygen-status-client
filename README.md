@@ -1,7 +1,7 @@
 
 # HeyGen Status Client
 
-[![License](https://img.shields.io/badge/license-Apache%202-blue)](https://www.apache.org/licenses/LICENSE-2.0)
+[![License](https://img.shields.io/badge/license-Apache%202-blue)](https://www.apache.org/licenses/LICENSE-2.0) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/apratimshukla6/heygen-status-client/tests.yml?label=Tests) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/apratimshukla6/heygen-status-client/main.yml)
 
 TypeScript status client library for a demo HeyGen video translation service.
 
